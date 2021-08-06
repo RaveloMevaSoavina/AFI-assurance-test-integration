@@ -1,0 +1,535 @@
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url("../fonts/Oswald-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Oswald-ExtraLight";
+    src: url("../fonts/Oswald-ExtraLight.ttf") format("truetype");
+    font-weight: Thin;
+}
+
+@font-face {
+    font-family: "Oswald-Light";
+    src: url("../fonts/Oswald-Light.ttf") format("truetype");
+    font-weight: thin;
+}
+
+@font-face {
+    font-family: "Oswald-Medium";
+    src: url("../fonts/Oswald-Medium.ttf") format("truetype");
+    font-weight: Medium;
+}
+
+@font-face {
+    font-family: "Oswald-Regular";
+    src: url("../fonts/Oswald-Regular.ttf") format("truetype");
+    font-weight: Regular;
+}
+
+@font-face {
+    font-family: "Oswald-SemiBold";
+    src: url("../fonts/Oswald-SemiBoled.ttf") format("truetype");
+    font-weight: SemiBold;
+}
+
+*{
+    box-sizing: border-box;
+    padding :0;
+    margin: 0;
+}
+
+body{
+    font-family : Oswald-Regular;
+    padding : 10px;
+}
+/********************** START UTILITIES STYLES ************************/
+section{
+    margin-top: 20px;
+}
+
+
+hr{
+    border: 1px solid #FFA321;
+}
+
+.button{
+    background-color: #FF9600;
+    border : none;
+    outline: none;
+    padding : 10px 30px;
+    border-radius : 30px;
+    color : #FFF;
+    font-size: 26px;
+    font-family: Oswald-Medium;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+/********************** END UTILITIES STYLES ************************/
+
+
+/********************** START HEADER STYLES ************************/
+.header{
+    height: 22px;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0px;
+    text-align: left;
+    opacity: 1;
+}
+
+.header .header__breadcrumb{
+    color : #A4A4A4;
+    font-family: Oswald-Medium;
+    letter-spacing: 0px;
+    font-size : 20px;
+}
+
+.header .header__breadcrumb .header__current-route{
+    color : #FF9600;
+}
+
+.header .header__projectID{
+    font: normal normal normal 17px/25px Oswald-Regular;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+/********************** END HEADER STYLES ************************/
+
+/********************** START INFO PUB SECTION STYLES ************************/
+
+.info .info__pagetitle{
+    font-family: Oswald-Bold , serif;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 0px;
+    color: #071611;
+    opacity: 1;
+}
+
+.info .info__projectIDContent{
+    text-align:center;
+    display: none;
+    margin : 30px 0
+}
+
+.infoFirst{
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info__tooltip{
+    border : 1px solid #47B57A4D;
+    padding : 20px 10px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-radius: 10px;
+}
+
+.info__tooltip-title{
+    color : #13AF37;
+    font-size: 25px;
+}
+
+.info__tooltip-text{
+    color : #00000089;
+}
+
+
+.button img{
+    color : #FF9600;
+    display : inline;
+    width : 30px;
+    height : 30px;
+    margin-left : 20px;
+    background-color :#FFFFFF;
+    border-radius: 100%;
+    padding : 5px;
+    
+}
+
+section .titre{
+    text-align: center;
+}
+section .titre .titre-contrast{
+    color :#FF6200;
+}
+
+section .section1-details{
+    background-color: #FFF5E6;
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    height : 169px;
+    margin: 30px 0;
+}
+
+section .section1-details .section-details__image{
+    width : 198px;
+    height : 130px;
+}
+
+section .section1-details .section-details__center .title{
+    color :#FF6200;
+    font-size : 30px;
+}
+
+.cardcontainer{
+    display : flex;
+    margin: 30px 0;
+}
+
+.cardcontainer .card{
+    background-color: #ECECEC;
+    border-radius : 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    margin: 0 10px;
+    width : calc(100vw/4);
+}
+
+.cardcontainer .card .content{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cardprogress{
+    height : 10px;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px;
+    background-color : #47B57A;
+    position : relative ;
+    top : 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.progress6left{
+    width : 10px;
+}
+.progress1left{
+    width : 20px;
+}
+
+.progress2left{
+    width : 250px;
+}
+
+.complete{
+    color :#47B57A;
+   text-transform: uppercase;
+   display : flex;
+   align-items: center;
+   justify-content:center;
+   font-size : 22px;
+   text-align: center;
+   height : 65px;
+}
+
+.complete .thumb{
+    width : 30px;
+    margin : 10px;
+    position : relative;
+    top : -2px;
+}
+
+.cardcontainer .card .bottom{
+    background-color: #FFF;
+    text-align: center;
+    padding : 20px;
+    margin : 2px;
+    border-bottom-right-radius : 20px;
+    border-bottom-left-radius : 20px;
+}
+
+.cardcontainer .card .icon{
+    width: 80px;
+    margin : 0 auto;
+}
+
+.lastSection{
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    padding : 10px 20px;
+    display : flex;
+    align-items: center;
+    justify-content:space-between;
+    width : 100vw;
+}
+
+.lastSection__image{
+    margin-right: 10px;
+    width : 150px;
+}
+
+#or{
+    text-align:center;
+    font-size: 31px;
+}
+
+#button_desktop{
+    display : flex;
+    justify-content: right;
+}
+
+.panneau-pub{
+    height :300px;
+    width : 80vw;
+    font-family: Oswald-Light;
+    font-size: 20px;
+    padding : 0;
+}
+
+.panneau-pub__top{
+    background-color: #F5F5F5;
+    display : flex;
+    align-items: center;
+    padding-left: 70px;
+}
+.panneau-pub__bottom{
+    padding-top: 20px;
+    padding-left: 200px;
+}
+
+.panneau-pub__top img{
+    height :90px;
+    margin-right : 50px;
+}
+
+.title-pub{
+    color : #333333;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#femme{
+    height: 275px;
+}
+
+.pub-container{
+    position: relative;
+    z-index : 99;
+    top : -260px;
+    left : 133px;
+    padding : 0;
+    height : 258px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.progresscontainer {
+    width: 800px; /* Width of the outside container */ /*miaraka*******/
+    margin : 0 auto;
+}
+
+.progressbar{
+    height : 25px;
+    width : 800px;/*miaraka*******/
+    border-radius : 20px;
+    background-color: #DEDEDE;
+    display : flex;
+}
+
+.progressInnerContent{
+    display : flex;
+    justify-content: space-between;
+}
+
+.progresslabel{
+    display : flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top : -20px;
+}
+
+.progresscursor{
+    width : 50px;
+    height : 50px;
+    position : relative;
+    top: -45px;
+    left : -20px;
+}
+
+.progresscursor::before{
+    content : attr(data-tooltip);
+    width : max-content;
+    height : 50px;
+    padding : 5px 20px;
+    border: 2px solid #47B57A;
+    color : #47B57A;
+    border-radius: 30px;
+    position : relative;
+    top : -20px;
+    left : -10px;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: Oswald-SemiBold;
+    text-align: center;
+
+}
+.progresscursor::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #47B57A transparent transparent transparent;
+    top: 11px;
+    left: 25px;
+}
+
+.progressaccomplish{
+    width : calc((800px/2.9));
+    height : 25px;
+    background-color: #47B57A;
+    border-radius : 20px;
+}
+
+.visa{
+    width:50px;
+    height: 50px;
+    position: relative;
+    top : -15px;
+    left: -20px;
+}
+
+
+/********************** START MOBILE STYLES ************************/
+@media screen and (max-width: 600px) {
+    .header .header__projectID{
+        display : none;
+    }
+    .header .header__breadcrumb{
+        font-size: 16px;
+    }
+    .info .info__pagetitle{
+        font-size: 6.5vw;
+    }
+
+    .infoFirst{
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .info__tooltip{
+        flex :1;
+        width : 90vw;
+        margin : 20px 0 ;
+        text-align: center;
+    }
+    .info .info__projectIDContent{
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .progresscontainer {
+        width: 100vw; /* Width of the outside container */ /*miaraka*******/
+        padding: 50px 20px;
+    }
+
+    .progressbar{
+        height : 15px;
+        background-color: #DEDEDE;
+    }
+
+    .progressaccomplish{
+        width : calc((100vw/2.9));
+        height : 15px;
+        border-radius: 20px;
+    }
+
+    .progresscursor{
+        width : 20px;
+        height : 20px;
+        position : relative;
+        top: -40px;
+        left : -20px;
+    }
+
+    .runner{
+        width : 40px;
+        height : 40px;
+    }
+
+    .progresscursor::before{
+        height : 30px;
+        padding : 5px 15px;
+        font-size: 16px;
+    }
+
+    .button{
+        display : none;
+    }
+
+    #femme{
+        display : none;
+    }
+
+    .panneau-pub{
+        /* display: none; */
+        /* margin : 100px 10px; */
+        width :440px;
+        height : 100%;
+        align-items: flex-start;
+        margin : 0 auto;
+
+    }
+
+
+    .pub-container{
+        position : relative;
+        top: 0;
+        left : 0;
+        width : 100%;
+        height : 100%;
+        
+    }
+
+    .panneau-pub__top{
+        display:block-inline;
+        padding : 0;
+        font-size: 16px;
+        padding : 20px;
+    }
+
+    .panneau-pub__top img{
+        margin-right : 10px;
+        width : 70px;
+        height : 70px;
+    }
+
+    .panneau-pub__bottom{
+        padding-top: 20px;
+        padding-left : 10px;
+        margin-left: 30px;
+        font-size: 16px;
+        padding : 20px;
+    }
+
+    #sectionMobile, #or, .titre{
+        display : none;
+    }
+
+    .cardcontainer{
+        flex-direction : column;
+        width : 100vw;
+        /* background-color: red; */
+    }
+
+    .cardcontainer .card{
+        margin : 20px auto;
+        width : 90vw;
+    }
+
+    .progresscursor::after {
+        left: 15px;
+    }
+}
